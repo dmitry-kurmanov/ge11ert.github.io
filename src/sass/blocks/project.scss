@@ -45,6 +45,10 @@
       background-color: $white;
     }
 
+    &:active {
+      background-color: rgba($white, 0.7);
+    }
+
     &--result:hover {
       background-image: url('../../img/eye.svg');
       background-size: 30px 24px;

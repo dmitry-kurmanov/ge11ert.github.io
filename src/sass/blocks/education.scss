@@ -117,8 +117,6 @@
 
   .education__expand-button:hover,
   .education__expand-button:focus {
-    outline: none;
-
     &::after {
       transform: translateX(15px);
     }
