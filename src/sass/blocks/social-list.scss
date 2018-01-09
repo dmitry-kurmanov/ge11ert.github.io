@@ -1,0 +1,23 @@
+.social-list {
+  @include list-reset;
+  display: flex;
+  font-size: 0;
+  line-height: 0;
+
+  .social-list__item {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social-list__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    //background-image: url('../../img/github.svg');
+    //background-size: 32px;
+    //background-repeat: no-repeat;
+  }
+}

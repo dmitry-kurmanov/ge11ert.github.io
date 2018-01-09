@@ -7,6 +7,7 @@
 *.sublime*
 css/*.css
 node_modules/
+build/
 npm-debug.*
 Thumbs.db
 .tern-project

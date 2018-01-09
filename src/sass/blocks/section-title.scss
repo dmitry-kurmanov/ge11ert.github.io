@@ -1,0 +1,33 @@
+.section-title {
+  position: relative;
+  margin: 0;
+  padding: 8px 55px;
+  font-size: 30px;
+  line-height: 30px;
+  color: $main-grey;
+  font-weight: bold;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../../img/user.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: 'About me';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    color: rgba($main-grey, 0.04);
+    text-transform: uppercase;
+  }
+}

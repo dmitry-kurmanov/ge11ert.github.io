@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+
+  .header__nav-container {
+    @include desktop-padding;
+    position: absolute;
+    left: 0;
+    right: 0;//calc(50% - 550px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: $desktop-width;
+    box-sizing: border-box;
+    z-index: 2;
+
+    background-color: rgba($dark-blue, 0.85);
+  }
+
+  .header__logo-link {
+    width: 45px;
+    height: 41px;
+    background-image: url('../../img/code_icon.svg');
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .header__photo {
+    display: block;
+  }
+}

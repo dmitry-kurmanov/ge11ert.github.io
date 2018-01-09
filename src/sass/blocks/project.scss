@@ -1,0 +1,96 @@
+.project {
+  position: relative;
+  width: 500px;
+  padding: 22px 18px 12px;
+  box-sizing: border-box;
+  border: 2px solid $mid-grey;
+
+  .project__info {
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 18px 12px;
+
+    text-align: center;
+    background-color: rgba($dark-grey, 0.97);
+  }
+
+  .project__title {
+    margin: 0;
+    margin-bottom: 110px;
+    color: $white;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .project__link {
+    color: $white;
+    padding: 6px 25px 6px 60px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+
+    &:first-of-type {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: $main-purple;
+      background-color: $white;
+    }
+
+    &--result:hover {
+      background-image: url('../../img/eye.svg');
+      background-size: 30px 24px;
+      background-position: 13px 8px;
+      background-repeat: no-repeat;
+    }
+
+    &--source:hover {
+      background-image: url('../../img/code.svg');
+      background-size: 24px;
+      background-position: 18px 8px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .project__image {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .project__features-list {
+    @include list-reset;
+    margin: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--reduced {
+      justify-content: flex-start;
+
+      .project__feature {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .project__feature {
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    font-size: 18px;
+    color: $white;
+    background-color: rgba($main-purple, 0.8);
+  }
+}
+
+.project:hover .project__info,
+.project:focus .project__info {
+  display: block;
+}

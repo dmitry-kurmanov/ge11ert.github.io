@@ -1,0 +1,24 @@
+.works {
+  @include desktop-padding;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .works__title {
+    flex-basis: 100%;
+    margin-bottom: 75px;
+
+    &::before {
+      background-image: url('../../img/portfolio.svg');
+    }
+
+    &::after {
+      content: 'Projects';
+    }
+  }
+
+  .works__item {
+    margin-bottom: 40px;
+  }
+}

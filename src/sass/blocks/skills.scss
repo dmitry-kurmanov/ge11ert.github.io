@@ -1,0 +1,87 @@
+.skills {
+  @include desktop-padding;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .skills__title {
+    margin-bottom: 75px;
+
+    &::before {
+      width: 36px;
+      height: 52px;
+      background-image: url('../../img/development.svg');
+    }
+
+    &::after {
+      content: 'My Skills';
+    }
+  }
+
+  .skills__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0 55px;
+  }
+
+  .skills__item {
+    position: relative;
+    width: 25%;
+    padding: 4px 0 4px 55px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+
+    background-image: url('../../img/html5.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 35px;
+
+    &:nth-child(4) {
+      margin-bottom: 60px;
+    }
+
+    &--css {
+      background-image: url('../../img/css3.svg');
+    }
+
+    &--js {
+      background-image: url('../../img/javascript.svg');
+    }
+
+    &--gulp {
+      background-image: url('../../img/gulp.svg');
+    }
+
+    &--scss {
+      width: 20%;
+      background-image: url('../../img/sass.svg');
+    }
+
+    &--git {
+      width: 20%;
+      background-image: url('../../img/git.svg');
+    }
+
+    &--bem {
+      width: 20%;
+      background-image: url('../../img/bem.svg');
+    }
+
+    &--adaptive {
+      width: 40%;
+      background-image: url('../../img/adaptive.svg');
+    }
+  }
+
+  .skills__goals {
+    margin: 0;
+    padding: 0 55px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba($main-grey, 0.75);
+  }
+}

@@ -1,0 +1,126 @@
+.education {
+  @include desktop-padding;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .education__title {
+    margin-bottom: 75px;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+      background-image: url('../../img/library.svg');
+      background-size: cover;
+    }
+
+    &::after {
+      content: 'Education';
+    }
+  }
+
+  .education__table {
+    width: calc(100% - 110px);
+    margin: 0 55px 60px;
+    border-collapse: collapse;
+    border: 2px solid $mid-grey;
+  }
+
+  td {
+    padding: 30px;
+    border-bottom: 1px solid $mid-grey;
+  }
+
+  .education__inner {
+    min-width: 60px;
+    padding: 0;
+    vertical-align: top;
+    border: none;
+  }
+
+  .education__type {
+    vertical-align: top;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  .education__organisation {
+    font-size: 18px;
+  }
+
+  .education__name {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .education__year {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .education__certificates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    margin-left: 55px;
+    padding: 0 30px;
+    background-color: $light-grey;
+    border: 1px solid $mid-grey;
+  }
+
+  .education__label {
+    margin: 0;
+    padding: 12px 0;
+    font-size: 18px;
+    color: rgba($main-grey, 0.8);
+  }
+
+  .education__expand-button {
+    position: relative;
+    width: 20px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    font-size: 0;
+    line-height: 0;
+
+    border: none;
+    opacity: 0.8;
+    background-color: transparent;
+    background-image: url('../../img/right-chevron-.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 32px;
+      opacity: 0.9;
+
+      background-image: url('../../img/right-chevron-.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      transition: transform 0.3s;
+    }
+  }
+
+  .education__expand-button:hover,
+  .education__expand-button:focus {
+    outline: none;
+
+    &::after {
+      transform: translateX(15px);
+    }
+  }
+}
