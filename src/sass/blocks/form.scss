@@ -81,3 +81,17 @@
     }
   }
 }
+
+@media (max-width: $laptop-width-breakpoint) {
+  .form {
+    width: 50%;
+  }
+
+  .form__label {
+    font-size: 16px;
+  }
+
+  .form__submit {
+    font-size: 14px;
+  }
+}

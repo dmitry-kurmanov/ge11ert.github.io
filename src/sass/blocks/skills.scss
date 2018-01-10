@@ -85,3 +85,15 @@
     color: rgba($main-grey, 0.75);
   }
 }
+
+@media (max-width: $laptop-width-breakpoint) {
+  .skills {
+    .skills__list {
+      padding: 0;
+    }
+
+    .skills__goals {
+      padding: 0;
+    }
+  }
+}

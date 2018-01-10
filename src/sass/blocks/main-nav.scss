@@ -38,3 +38,19 @@
     }
   }
 }
+
+@media (max-width: $laptop-width-breakpoint) {
+  .main-nav {
+    .main-nav__item {
+      margin-right: 45px;
+
+      &:last-child {
+        margin-right: 25px;
+      }
+    }
+
+    .main-nav__link {
+      font-size: 14px;
+    }
+  }
+}

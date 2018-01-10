@@ -17,6 +17,14 @@
     background-color: rgba($dark-blue, 0.85);
   }
 
+  .header__photo-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 550px;
+    overflow: hidden;
+  }
+
   .header__logo-link {
     width: 45px;
     height: 41px;
@@ -26,6 +34,15 @@
   }
 
   .header__photo {
-    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: $laptop-width-breakpoint) {
+  .header {
+    .header__photo-container {
+      max-height: 430px;
+    }
   }
 }
