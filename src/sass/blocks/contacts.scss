@@ -56,3 +56,22 @@
     border-bottom: 1px solid $main-purple;
   }
 }
+
+@media (max-width: $laptop-width-breakpoint) {
+  .contacts {
+    justify-content: center;
+    .contacts__motto {
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+
+    .contacts__details {
+      margin-left: 0;
+      margin-right: 80px;
+    }
+
+    .contacts__form {
+      margin-right: 0;
+    }
+  }
+}

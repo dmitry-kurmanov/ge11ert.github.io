@@ -44,6 +44,10 @@
     font-weight: bold;
   }
 
+  small {
+    display: none;
+  }
+
   .education__organisation {
     font-size: 18px;
   }
@@ -119,6 +123,39 @@
   .education__expand-button:focus {
     &::after {
       transform: translateX(15px);
+    }
+  }
+}
+
+@media (max-width: $laptop-width-breakpoint) {
+  .education {
+    .education__table {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 60px;
+    }
+
+    .education__type {
+      display: none;
+    }
+
+    small {
+      display: inline;
+      position: relative;
+      top: -8px;
+      left: 6px;
+      line-height: 18px;
+      color: rgba($main-grey, 0.65);
+      font-weight: normal;
+    }
+
+    .education__year {
+      padding-left: 0;
+    }
+
+    .education__certificates {
+      width: 50%;
+      margin-left: 0;
     }
   }
 }
