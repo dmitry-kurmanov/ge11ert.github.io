@@ -2,7 +2,7 @@
   @include desktop-padding;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 40px;
 
   .works__title {
@@ -20,5 +20,9 @@
 
   .works__item {
     margin-bottom: 40px;
+
+    &:nth-child(2n) {
+      margin-right: 4%;
+    }
   }
 }
