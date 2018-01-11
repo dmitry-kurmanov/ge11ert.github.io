@@ -58,8 +58,7 @@
     }
 
     .header__nav-container {
-      @include mobile-padding
-      //position: relative;
+      @include mobile-padding;
       min-height: 70px;
 
       &--menu-opened {

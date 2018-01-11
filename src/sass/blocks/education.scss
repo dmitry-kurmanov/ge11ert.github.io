@@ -65,14 +65,55 @@
 
   .education__certificates {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 450px;
+    justify-content: flex-start;
+    //align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 500px;
+    min-height: 50px;
     margin-left: 55px;
     padding-left: 30px;
     padding-right: 15px;
     background-color: $light-grey;
     border: 1px solid $mid-grey;
+    transition: width 0.3s, min-height 0.3s 0.3s;
+
+    &--expanded {
+      width: calc(100% - 110px);
+      min-height: 255px;
+    }
+  }
+
+  .education__certificates-container {
+    display: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  .education__certificate {
+    display: block;
+    width: 130px;
+    height: 185px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 0;
+    line-height: 0;
+    background-color: $dark-blue;
+
+    &--wide {
+      width: 194px;
+      height: 137px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   .education__label {
@@ -88,7 +129,8 @@
     height: 32px;
     padding: 0;
     margin: 0;
-    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 8px;
     font-size: 0;
     line-height: 0;
 
@@ -155,8 +197,14 @@
     }
 
     .education__certificates {
-      width: 50%;
+      width: 55%;
       margin-left: 0;
+      padding-right: 0;
+
+      &--expanded {
+        width: 100%;
+        min-height: 300px;
+      }
     }
   }
 }
@@ -188,6 +236,24 @@
 
     .education__certificates {
       border-left: none;
+
+      &--expanded {
+        min-height: 210px;
+      }
+    }
+
+    .education__certificate {
+      width: 91px;
+      height: 130px;
+
+      &--wide {
+        width: 136px;
+        height: 96px;
+      }
+
+      img {
+        height: auto;
+      }
     }
 
     .education__label {
@@ -228,12 +294,26 @@
 
     .education__certificates {
       width: 60%;
+      min-height: 40px;
       padding-right: 0;
+
+      &--expanded {
+        width: 100%;
+        min-height: 300px;
+      }
+    }
+
+    .education__certificate {
+      margin-right: 10px;
     }
 
     .education__label {
       padding: 8px 0;
       font-size: 12px;
+    }
+
+    .education__expand-button {
+      margin-top: 3px;
     }
   }
 }
