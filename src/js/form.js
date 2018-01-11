@@ -24,9 +24,4 @@
   form.addEventListener('blur', checkValidity, true);
 
   form.addEventListener('invalid', checkValidity, true);
-
-  form.addEventListener('submit', function () {
-    form.reset();
-  });
-
 })();
