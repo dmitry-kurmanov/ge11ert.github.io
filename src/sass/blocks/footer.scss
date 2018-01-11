@@ -46,3 +46,24 @@
     }
   }
 }
+
+@media (max-width: $tablet-width-breakpoint) {
+  .footer {
+    .footer__copyright {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-breakpoint) {
+  .footer {
+    .footer__copyright {
+      margin-right: 30px;
+      font-size: 14px;
+    }
+
+    .footer__up {
+      font-size: 14px;
+    }
+  }
+}

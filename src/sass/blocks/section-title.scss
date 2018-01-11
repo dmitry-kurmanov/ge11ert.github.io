@@ -50,3 +50,15 @@
     }
   }
 }
+
+@media (max-width: $mobile-width-breakpoint) {
+  .section-title {
+    font-size: 20px;
+
+    &::after {
+      top: 3px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}

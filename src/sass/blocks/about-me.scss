@@ -173,3 +173,24 @@
     }
   }
 }
+
+@media (max-width: $mobile-width-breakpoint) {
+  .about-me {
+    .about-me__photo-container {
+      margin-right: 80px;
+    }
+
+    .about-me__info {
+      margin-right: 80px;
+    }
+
+    .about-me__social-list {
+      top: -15px;
+      transform: translateX(150px);
+    }
+
+    .about-me__greeting {
+      font-size: 12px;
+    }
+  }
+}

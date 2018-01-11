@@ -53,11 +53,11 @@
     }
 
     &--gulp {
+      width: 20%;
       background-image: url('../../img/gulp.svg');
     }
 
     &--scss {
-      width: 20%;
       background-image: url('../../img/sass.svg');
     }
 
@@ -131,6 +131,37 @@
     .skills__goals {
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-breakpoint) {
+  .skills {
+    .skills__list {
+      padding: 0;
+      margin-left: 7%;
+    }
+
+    .skills__item {
+      width: 50%;
+      margin-bottom: 15px;
+      font-size: 14px;
+      background-size: 24px;
+      background-position: 0 center;
+
+      &:nth-child(4) {
+        margin-bottom: 20px;
+      }
+
+      &--bem {
+        line-height: 56px;
+        vertical-align: middle;
+      }
+    }
+
+    .skills__goals {
+      margin-left: 5%;
+      font-size: 14px;
     }
   }
 }

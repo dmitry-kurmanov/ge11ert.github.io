@@ -205,3 +205,35 @@
     }
   }
 }
+
+@media (max-width: $mobile-width-breakpoint) {
+  .education {
+    .education__title {
+      margin-bottom: 20px;
+    }
+
+    .education__organisation {
+      padding-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .education__year {
+      padding-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .education__inner {
+      min-width: 45px;
+    }
+
+    .education__certificates {
+      width: 60%;
+      padding-right: 0;
+    }
+
+    .education__label {
+      padding: 8px 0;
+      font-size: 12px;
+    }
+  }
+}

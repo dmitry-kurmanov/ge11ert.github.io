@@ -242,3 +242,33 @@
     }
   }
 }
+
+@media (max-width: $mobile-width-breakpoint) {
+  .project {
+    padding: 10px;
+
+    .project__desc {
+      font-size: 14px;
+    }
+
+    .project__link {
+      padding-left: 32px;
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
+    .project__image {
+      &--wide {
+        width: 266px;
+        height: 125px;
+      }
+
+      &--high {
+        width: 266px;
+        height: 171px;
+      }
+    }
+  }
+}
