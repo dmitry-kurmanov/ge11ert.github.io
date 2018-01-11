@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-height: 550px;
+    height: 550px;
     overflow: hidden;
   }
 
@@ -42,7 +42,24 @@
 @media (max-width: $laptop-width-breakpoint) {
   .header {
     .header__photo-container {
-      max-height: 430px;
+      height: 430px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width-breakpoint) {
+  .header {
+    .header__photo-container {
+      height: 350px;
+    }
+
+    .header__nav {
+      display: none;
+    }
+
+    .header__nav-container {
+      @include mobile-padding
+      min-height: 70px;
     }
   }
 }

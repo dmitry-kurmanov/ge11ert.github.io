@@ -37,8 +37,18 @@
 
 @media (max-width: $laptop-width-breakpoint) {
   .works {
+    .works__title {
+      margin-bottom: 30px;
+    }
+
     .works__item:nth-child(2n) {
       margin-right: 0;
     }
+  }
+}
+
+@media (max-width: $tablet-width-breakpoint) {
+  .works {
+    @include mobile-padding;
   }
 }

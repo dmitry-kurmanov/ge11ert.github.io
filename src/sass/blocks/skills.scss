@@ -97,3 +97,40 @@
     }
   }
 }
+
+@media (max-width: $tablet-width-breakpoint) {
+  .skills {
+    @include mobile-padding;
+
+    .skills__title {
+      margin-bottom: 50px;
+    }
+
+    .skills__list {
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+
+    .skills__item {
+      width: 33%;
+      margin-bottom: 20px;
+      padding-left: 35px;
+      font-size: 16px;
+      line-height: 24px;
+      background-size: 27px;
+
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+
+      &--adaptive {
+        width: 66%;
+      }
+    }
+
+    .skills__goals {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

@@ -57,6 +57,10 @@
     font-size: 20px;
     line-height: 28px;
     color: $main-grey;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -112,6 +116,60 @@
       &--first {
         font-size: 20px;
       }
+    }
+  }
+}
+
+@media (max-width: $tablet-width-breakpoint) {
+  .about-me {
+    @include mobile-padding;
+
+    .about-me__info-container {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .about-me__photo-container {
+      width: auto;
+      margin-right: 100px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .about-me__info {
+      width: auto;
+      margin-right: 100px;
+    }
+
+    .about-me__name {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .about-me__photo {
+      margin-bottom: 25px;
+    }
+
+    .about-me__social-list {
+      position: absolute;
+      top: -20px;
+      right: 50%;
+      transform: translateX(170px);
+    }
+
+    .about-me__greeting-container {
+      padding: 0 15px;
+    }
+
+    .about-me__greeting {
+      margin-bottom: 10px;
+      font-size: 14px;
+      text-align: justify;
     }
   }
 }

@@ -160,3 +160,48 @@
     }
   }
 }
+
+@media (max-width: $tablet-width-breakpoint) {
+  .education {
+    padding: 40px 0;
+
+    .education__title {
+      margin: 0 15px 50px;
+    }
+
+    .education__table {
+      margin-bottom: 30px;
+      border-right: none;
+      border-left: none;
+    }
+
+    .education__organisation {
+      padding-right: 0;
+      padding-left: 15px;
+      font-size: 16px;
+    }
+
+    .education__year {
+      padding-right: 15px;
+      font-size: 16px;
+    }
+
+    .education__certificates {
+      border-left: none;
+    }
+
+    .education__label {
+      font-size: 16px;
+    }
+
+    .education__expand-button {
+      width: 50px;
+      background-size: 25px;
+
+      &::after {
+        width: 50px;
+        background-size: 25px;
+      }
+    }
+  }
+}
