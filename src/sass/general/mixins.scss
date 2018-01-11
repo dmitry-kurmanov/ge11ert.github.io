@@ -8,3 +8,8 @@
   padding-left: $desktop-padding;
   padding-right: $desktop-padding;
 }
+
+@mixin mobile-padding {
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+}

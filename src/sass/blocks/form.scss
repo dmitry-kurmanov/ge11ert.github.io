@@ -5,6 +5,7 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid $dark-grey;
+    border-radius: 0;
     padding: 10px 15px;
     box-sizing: border-box;
 
@@ -25,6 +26,7 @@
     padding: 10px 20px;
     box-sizing: border-box;
     border: 1px solid $dark-grey;
+    border-radius: 0;
 
     &:focus {
       border: 1px solid $main-purple;
@@ -93,5 +95,19 @@
 
   .form__submit {
     font-size: 14px;
+  }
+}
+
+@media (max-width: $tablet-width-breakpoint) {
+  .form {
+    width: 100%;
+
+    .form__field-container {
+      margin-bottom: 30px;
+
+      &:nth-child(2){
+        margin-bottom: 50px;
+      }
+    }
   }
 }

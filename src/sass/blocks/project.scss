@@ -171,6 +171,7 @@
       padding-left: 35px;
       color: $main-purple;
       font-size: 16px;
+      transition: background-size 0.2s;
 
       &:first-of-type {
         margin-right: 10px;
@@ -178,7 +179,7 @@
 
       &--result {
         background-image: url('../../img/eye.svg');
-        background-size: 30px 24px;
+        background-size: 24px;
         background-position: 0 5px;
         background-repeat: no-repeat;
       }
@@ -190,8 +191,86 @@
         background-repeat: no-repeat;
       }
 
-      &:hover {
-        background-position: 0 5px;
+      &:hover,
+      &:focus {
+        background-position: 0 4px;
+        background-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width-breakpoint) {
+  .project {
+    flex-direction: column;
+
+    .project__info {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-top: 0;
+    }
+
+    .project__image-container {
+      width: 100%;
+    }
+
+    .project__title {
+      margin-bottom: 15px;
+    }
+
+    .project__desc {
+      margin-bottom: 20px;
+    }
+
+    .project__image {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .project__features-list {
+      justify-content: center;
+    }
+
+    .project__feature {
+      align-self: center;
+      padding: 2px 8px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .project__link {
+      &:first-of-type {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width-breakpoint) {
+  .project {
+    padding: 10px;
+
+    .project__desc {
+      font-size: 14px;
+    }
+
+    .project__link {
+      padding-left: 32px;
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
+    .project__image {
+      &--wide {
+        width: 266px;
+        height: 125px;
+      }
+
+      &--high {
+        width: 266px;
+        height: 171px;
       }
     }
   }

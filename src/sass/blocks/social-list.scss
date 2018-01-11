@@ -31,3 +31,17 @@
     opacity: 0.6;
   }
 }
+
+@media (max-width: $tablet-width-breakpoint) {
+  .social-list {
+    flex-direction: column;
+
+    .social-list__item {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -28,9 +28,12 @@
               <a href="#contacts" class="main-nav__link">Контакты</a>
             </li>
           </ul>
+          <button class="header__menu-button">Открыть меню</button>
         </div>
         <div class="header__photo-container">
           <picture>
+            <source media="(max-width: 424px)" srcset="./img/kboard_425.jpg">
+            <source media="(max-width: 767px)" srcset="./img/kboard_768.jpg">
             <source media="(max-width: 979px)" srcset="./img/kboard_980.jpg">
             <img src="./img/kboard_1100_extended.jpg" class="header__photo" width="1100" height="661" alt="Фоновая фотография шапки">
           </picture>
@@ -105,8 +108,8 @@
             <li class="skills__item skills__item--html">HTML5</li>
             <li class="skills__item skills__item--css">CSS3</li>
             <li class="skills__item skills__item--js">JavaScript</li>
-            <li class="skills__item skills__item--gulp">Gulp</li>
             <li class="skills__item skills__item--scss">SCSS</li>
+            <li class="skills__item skills__item--gulp">Gulp</li>
             <li class="skills__item skills__item--git">git</li>
             <li class="skills__item skills__item--bem">БЭМ</li>
             <li class="skills__item skills__item--adaptive">Адаптивная вёрстка</li>
@@ -145,10 +148,30 @@
             </tr>
           </table>
           <article class="education__certificates">
-            <h3 class="education__label">
-              Сертификаты:
-            </h3>
+            <h3 class="education__label">Сертификаты:</h3>
             <button class="education__expand-button">Развернуть</button>
+            <div class="education__certificates-container">
+              <a href="https://drive.google.com/open?id=1wFWd68uk5A9X1hd3digqmGDzX7Oe0VlH" class="education__certificate education__certificate--wide">
+                Подготовительная программа по программированию на C++
+                <img src="./img/cert-4.jpg" width="194" height="137" alt="">
+              </a>
+              <a href="https://drive.google.com/open?id=1wFWd68uk5A9X1hd3digqmGDzX7Oe0VlH" class="education__certificate education__certificate--wide">
+                Web-технологии
+                <img src="./img/cert-5.jpg" width="194" height="137" alt="">
+              </a>
+              <a href="https://drive.google.com/open?id=1YkrzyhjSqmC2ZCNJn4yR1mfriOZ3BchQ" class="education__certificate">
+                Базовый HTML/CSS
+                <img src="./img/cert-1.jpg" width="130" height="185" alt="">
+              </a>
+              <a href="https://drive.google.com/open?id=1HiU_K3STjHE-dekJ7omobluUgJK5-SHU" class="education__certificate">
+                Продвинутый HTML/CSS
+                <img src="./img/cert-2.jpg" width="130" height="185" alt="">
+              </a>
+              <a href="https://drive.google.com/open?id=1sb8FBH8ikQqsx3LxsVC1T5fMwQeC0S13" class="education__certificate">
+                Базовый JavaScript
+                <img src="./img/cert-3.jpg" width="130" height="185" alt="">
+              </a>
+            </div>
           </article>
         </section>
         <section class="works" id="works">
@@ -164,6 +187,7 @@
             </div>
             <div class="project__image-container">
               <picture>
+                <source media="(max-width: 424px)" srcset="/img/mishka_mobile@1X.jpg">
                 <source media="(max-width: 979px)" srcset="/img/mishka_tablet@1X.jpg">
                 <img src="./img/mishka_desktop@1X.jpg" class="project__image project__image--wide" width="368" height="173" alt="Превью проекта Мишка">
               </picture>
@@ -188,6 +212,7 @@
             </div>
             <div class="project__image-container">
               <picture>
+                <source media="(max-width: 424px)" srcset="/img/barbershop_mobile@1X.jpg">
                 <source media="(max-width: 979px)" srcset="/img/barbershop_tablet@1X.jpg">
                 <img src="./img/barbershop_desktop@1X.jpg" class="project__image project__image--wide" width="368" height="173" alt="Превью проекта Бородински">
               </picture>
@@ -211,6 +236,7 @@
             </div>
             <div class="project__image-container">
               <picture>
+                <source media="(max-width: 424px)" srcset="/img/keksobooking_mobile@1X.jpg">
                 <source media="(max-width: 979px)" srcset="/img/keksobooking_tablet@1X.jpg">
                 <img src="./img/keksobooking_desktop@1x.jpg" class="project__image project__image--high" width="368" height="236" alt="Превью проекта Кексобукинг">
               </picture>
@@ -235,6 +261,7 @@
             </div>
             <div class="project__image-container">
               <picture>
+                <source media="(max-width: 424px)" srcset="/img/sedona_mobile@1X.jpg">
                 <source media="(max-width: 979px)" srcset="/img/sedona_tablet@1X.jpg">
                 <img src="./img/sedona_desktop@1X.jpg" class="project__image project__image--high" width="368" height="236" alt="Превью проекта Седона">
               </picture>
@@ -315,5 +342,6 @@
     </div>
 
     <script src="./js/picturefill.min.js" async></script>
+    <script src="./js/app.min.js" async></script>
   </body>
 </html>

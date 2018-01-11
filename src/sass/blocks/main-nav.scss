@@ -54,3 +54,31 @@
     }
   }
 }
+
+@media (max-width: $tablet-width-breakpoint) {
+  .main-nav {
+    .main-nav__item {
+      margin-right: 0;
+      background-color: $dark-blue;
+      border-bottom: 1px solid rgba($mid-grey, 0.5);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        border-top: 1px solid rgba($mid-grey, 0.5);
+      }
+    }
+
+    .main-nav__link {
+      padding: 16px 30px;
+      font-weight: bold;
+      text-align: center;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
