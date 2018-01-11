@@ -114,6 +114,11 @@
     &:last-of-type {
       margin-right: 0;
     }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
   }
 
   .education__label {

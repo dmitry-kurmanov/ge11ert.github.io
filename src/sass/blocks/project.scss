@@ -171,6 +171,7 @@
       padding-left: 35px;
       color: $main-purple;
       font-size: 16px;
+      transition: background-size 0.2s;
 
       &:first-of-type {
         margin-right: 10px;
@@ -178,7 +179,7 @@
 
       &--result {
         background-image: url('../../img/eye.svg');
-        background-size: 30px 24px;
+        background-size: 24px;
         background-position: 0 5px;
         background-repeat: no-repeat;
       }
@@ -190,8 +191,10 @@
         background-repeat: no-repeat;
       }
 
-      &:hover {
-        background-position: 0 5px;
+      &:hover,
+      &:focus {
+        background-position: 0 4px;
+        background-size: 30px;
       }
     }
   }
