@@ -1,7 +1,7 @@
 {
-  "name": "template-project",
-  "version": "0.1.0",
-  "description": "шаблон для быстрого старта проекта на html/css/js",
+  "name": "ge11ert.github.io",
+  "version": "1.0.0",
+  "description": "персональная страница",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^7.2.3",
@@ -51,12 +51,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ge11ert/template-project.git"
+    "url": "git+https://github.com/Ge11ert/ge11ert.github.io.git"
   },
   "author": "Gellert",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ge11ert/template-project/issues"
-  },
-  "homepage": "https://github.com/Ge11ert/template-project#readme"
+  "license": "ISC"
 }
