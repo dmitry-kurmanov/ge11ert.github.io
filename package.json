@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "персональная страница",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^7.2.3",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
@@ -29,10 +28,9 @@
     "stylelint-config-htmlacademy": "^0.1.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'src/sass/**/*.scss' --syntax scss",
     "eslint": "eslint src/js/**/*.js",
-    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
+    "test": "npm run stylelint && npm run eslint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
@@ -40,14 +38,6 @@
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "src/js/**/*.js",
-    "src/img/**/*.svg",
-    "src/sass/**/*.{sass,scss}"
   ],
   "repository": {
     "type": "git",
