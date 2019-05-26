@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "персональная страница",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^7.2.3",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "eslint": "^4.13.1",
     "eslint-config-htmlacademy": "^0.3.2",
-    "gulp": "^3.9.1",
+    "gulp": "4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.4.0",
+    "gulp-imagemin": "5.0.3",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-posthtml": "^3.0.0",
@@ -21,18 +20,16 @@
     "gulp-sass": "^3.1.0",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-webp": "^2.3.0",
+    "gulp-webp": "4.0.1",
     "posthtml-include": "^1.1.0",
     "remove-svg-properties": "^0.3.3",
-    "run-sequence": "^2.2.0",
     "stylelint": "^8.4.0",
     "stylelint-config-htmlacademy": "^0.1.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'src/sass/**/*.scss' --syntax scss",
     "eslint": "eslint src/js/**/*.js",
-    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
+    "test": "npm run stylelint && npm run eslint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
@@ -40,14 +37,6 @@
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "src/js/**/*.js",
-    "src/img/**/*.svg",
-    "src/sass/**/*.{sass,scss}"
   ],
   "repository": {
     "type": "git",
