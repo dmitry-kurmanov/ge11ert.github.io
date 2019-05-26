@@ -23,7 +23,6 @@
     "gulp-webp": "4.0.1",
     "posthtml-include": "^1.1.0",
     "remove-svg-properties": "^0.3.3",
-    "run-sequence": "^2.2.0",
     "stylelint": "^8.4.0",
     "stylelint-config-htmlacademy": "^0.1.0"
   },
