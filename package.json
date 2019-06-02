@@ -34,8 +34,11 @@
     "stylelint": "stylelint 'src/sass/**/*.scss' --syntax scss",
     "eslint": "eslint src/js/**/*.js",
     "test": "npm run stylelint && npm run eslint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "build": "webpack --config ./config/webpack.app.base.js",
+    "build-production": "ENV=production webpack --config ./config/webpack.app.production.js",
+    "dev": "npm run serve",
+    "start": "npm run serve",
+    "serve": "webpack-dev-server --progress --config ./config/webpack.app.dev.js"
   },
   "browserslist": [
     "last 2 versions",
